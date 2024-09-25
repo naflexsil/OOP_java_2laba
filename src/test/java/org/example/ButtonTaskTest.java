@@ -1,12 +1,11 @@
 package org.example;
-
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class TestButton {
+class ButtonTaskTest {
     @Test
-    public void testClick() {
-        Main.Button button = new Main.Button();
+    public void testButtonClickCount() {
+        ButtonTask.Button button = new ButtonTask.Button();
 
         button.click();
         assertEquals(1, button.getClickCount());
