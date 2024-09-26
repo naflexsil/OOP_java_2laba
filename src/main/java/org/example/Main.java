@@ -11,7 +11,7 @@ public class Main {
         System.out.println("2 - Balance Bowl");
         System.out.println("3 - Bell Ding-Dong");
         System.out.println("4 - EvenOddNumbers");
-        System.out.println("5 - EvenOddNumbers");
+        System.out.println("5 - Table");
 
         int choice = scanner.nextInt();
 
@@ -32,6 +32,9 @@ public class Main {
             case 4:
                 EvenOddNumbers evenOddTask = new EvenOddNumbers();
                 evenOddTask.execute();
+                break;
+            case 5:
+                new Table(0, 0).execute();
                 break;
             default:
                 System.out.println("invalid choice!!!!!!!!!!!");
