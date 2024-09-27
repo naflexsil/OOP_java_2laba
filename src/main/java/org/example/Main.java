@@ -12,6 +12,7 @@ public class Main {
         System.out.println("3 - Bell Ding-Dong");
         System.out.println("4 - EvenOddNumbers");
         System.out.println("5 - Table");
+        System.out.println("6 - Geometry");
 
         int choice = scanner.nextInt();
 
@@ -36,8 +37,19 @@ public class Main {
             case 5:
                 new Table(0, 0).execute();
                 break;
+            case 6:
+                Geometry geometryTask = new Geometry();
+                System.out.println("choose  a / b / c:");
+                System.out.println("a - circle");
+                System.out.println("b - rectangle");
+                System.out.println("c - cylinder");
+
+                char subTask = scanner.next().charAt(0);
+                geometryTask.execute(subTask);
+                break;
             default:
                 System.out.println("invalid choice!!!!!!!!!!!");
         }
+
     }
 }

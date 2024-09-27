@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EvenOddNumbers {
-    private List<Integer> evenNumbers = new ArrayList<>();
-    private List<Integer> oddNumbers = new ArrayList<>();
+    private final List<Integer> evenNumbers = new ArrayList<>();
+    private final List<Integer> oddNumbers = new ArrayList<>();
 
     public void addNumber(int number) {
         if (number % 2 == 0) {
